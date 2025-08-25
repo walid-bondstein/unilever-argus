@@ -1,19 +1,19 @@
 "use client"
 
-import { useAppDispatch, useAppSelector, type RootState } from "@/lib/store"
-import { logoutUser } from "@/lib/store/slices/authSlice"
-import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger,
   DropdownMenuSeparator,
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Moon, Sun, LogOut, User, Settings, Bell } from "lucide-react"
-import { useRouter } from "next/navigation"
+import { useAppDispatch, useAppSelector, type RootState } from "@/lib/store"
+import { logoutUser } from "@/lib/store/slices/authSlice"
+import { LogOut, Settings, User } from "lucide-react"
 import { useTheme } from "next-themes"
+import { useRouter } from "next/navigation"
 // import { setTheme } from "@/lib/store/slices/appSlice"
 
 export function Header() {
