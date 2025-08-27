@@ -6,7 +6,6 @@ import { Button } from '../ui/button'
 import { Edit, Search, Trash2 } from 'lucide-react'
 import { Input } from '../ui/input'
 import { UserT } from '@/types'
-import { Skeleton } from '../ui/skeleton'
 import TableSkeleton from '../shared/TableSkeleton'
 
 export default function UserTable({

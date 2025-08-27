@@ -27,6 +27,10 @@ export function Header() {
     router.push("/")
   }
 
+  const handelRouteChange = (route: string) => {
+    router.push(route)
+  }
+
   const handleThemeToggle = () => {
     console.log("Current theme:", theme)
     setTheme(theme === "light" ? "dark" : "light")
@@ -58,7 +62,7 @@ export function Header() {
               </div>
             </div>
             <DropdownMenuSeparator />
-            <DropdownMenuItem className="flex items-center">
+            <DropdownMenuItem onClick={() => handelRouteChange('/profile')} className="flex items-center">
               <User className="mr-2 h-4 w-4" />
               <span>Profile</span>
             </DropdownMenuItem>
